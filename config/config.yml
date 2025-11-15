@@ -1,0 +1,25 @@
+data_root: "data"
+duckdb_path: "db/market.duckdb"
+
+# If null, we auto-resolve to latest available date in silver_price_daily
+run_date: null
+
+price_lookback_days: 252
+ret_lookback_days: 60
+vol_lookback_days: 60
+
+# thresholds
+min_abs_ret_z: 2.0
+min_rvol: 2.0
+min_gap_atr: 1.5
+min_vol_spike_z: 2.0
+rs_top_pct: 0.9
+rs_bottom_pct: 0.1
+eps_surprise_threshold: 0.1
+news_intensity_z_threshold: 2.0
+
+# bronze ingestion
+max_workers: 8
+
+# FMP rate limit (requests per minute)
+fmp_rate_limit_per_minute: 750

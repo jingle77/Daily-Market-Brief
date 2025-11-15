@@ -1,0 +1,7 @@
+duckdb
+pyarrow
+pandas
+python-dotenv
+pyyaml
+requests
+streamlit

@@ -1,0 +1,37 @@
+cat << 'EOF' > .gitignore
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+*.egg
+*.log
+
+# Virtual envs
+.venv/
+env/
+venv/
+
+# Local config / secrets
+.env
+
+# Streamlit / cache
+.streamlit/
+.cache/
+.pytest_cache/
+
+# Data / DB
+data/
+db/
+*.duckdb
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+EOF
+
+# Other
+disaster_recovery/
